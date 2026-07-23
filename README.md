@@ -101,15 +101,4 @@ curl http://localhost:8000/reads
   swap it for SQLModel + asyncpg later (matching your usual stack) without
   touching the detection/OCR logic.
 
-## Suggested extensions (good for a portfolio writeup)
 
-1. **RAGAS-style eval set**: hand-label 50-100 plate crops with ground truth
-   text, compute character-level accuracy (Levenshtein distance) — gives you
-   a real metric to report instead of "it works on my test images."
-2. **Multi-frame voting for video**: instead of trusting a single frame's
-   OCR read, track the same plate across N frames and take a majority vote
-   per character position — classic ANPR trick, meaningfully boosts accuracy
-   on video.
-3. **Confidence-gated human review queue**: reads below some OCR confidence
-   threshold get flagged for manual review instead of auto-logged — the
-   kind of "know what you don't know" design that reads well in interviews.
