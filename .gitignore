@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS & system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ALPR specific ignores
+alpr.db
+crops/
+uploads/
+data/
+runs/
+yolov8*.pt
+*.pt

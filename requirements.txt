@@ -1,0 +1,11 @@
+ultralytics
+easyocr
+opencv-python
+roboflow
+fastapi
+uvicorn
+python-multipart
+numpy
+streamlit
+pandas
+Pillow
